@@ -1,0 +1,185 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #5474FD;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .menu__item {
+  display: inline-block;
+}
+
+.header .menu__link {
+  color: #FFFFFF;
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 20px;
+}
+
+.header .toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #496BFE 40%, #5474FD 30%);
+  color: #FFFFFF;
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 26px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+}
+
+.contact {
+  background-image: url(../../images/hero-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 200px;
+}
+
+.form {
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  gap: 20px;
+  background-color: rgba(35, 35, 35, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+.form__item--half {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(50% - 20px);
+          flex: 1 1 calc(50% - 20px);
+}
+
+.form__label {
+  font-family: "Josefin Sans", sans-serif;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.form__input {
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    display: block;
+  }
+  .header .logo {
+    margin-top: 10px;
+  }
+  .header .menu {
+    display: none;
+    background-color: #5474FD;
+  }
+  .header .menu__item {
+    display: block;
+    padding-top: 25px;
+  }
+  .header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .toggle {
+    display: block;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding-top: 15px;
+    margin-right: 20px;
+  }
+  .header.responsive .menu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    display: block;
+  }
+  .header .logo {
+    margin-top: 10px;
+  }
+  .header .menu {
+    background-color: #5474FD;
+    display: none;
+  }
+  .header .menu__item {
+    display: block;
+    padding-top: 25px;
+  }
+  .header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .toggle {
+    display: block;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding-top: 15px;
+    margin-right: 20px;
+  }
+  .header.responsive .menu {
+    display: block;
+  }
+  .form {
+    margin: 0 20px;
+  }
+  .form__item--half {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .form .btn {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

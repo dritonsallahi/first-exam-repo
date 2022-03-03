@@ -1,0 +1,129 @@
+// GLOBAL STYLE
+@import '../variables';
+@import '../header';
+.btn{
+    padding: 10px 20px;
+    background: linear-gradient(45deg, $secondary-color 40%,  $primary-color 30%);
+    color: $white-color;
+    font-family: $aleo-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 26px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: $white-color;
+    border: none;
+}
+//FORM
+.contact{
+    background-image: url(../../images/hero-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 200px;
+}
+
+.form{
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 20px;
+    background-color: rgba(35, 35, 35, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    &__item{
+        flex: 1 1 100%;
+    }
+    &__item--half{
+        flex: 1 1 calc(50% - 20px);
+    }
+    &__label{
+        font-family: $josefin-font;
+        color: $white-color;
+        width: 100%;
+    }
+    &__input{
+        font-family: $josefin-font;
+        width: 100%;
+        padding: 10px;
+    }
+}
+@media only screen and(max-width: 992px){
+    .header{
+        display: block;
+        .logo{
+            margin-top: 10px;
+        }
+        .menu{
+            display: none;
+            background-color: $primary-color;
+            &__item{
+                display: block;
+                padding-top: 25px;
+            }
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .toggle{
+            display: block;
+            color: $white-color;
+            font-size: 20px;
+            padding-top: 15px;
+            margin-right: 20px;
+        }
+        &.responsive{
+            .menu{
+                display: block;
+            }
+        }
+    }
+}
+@media only screen and (max-width:767px) {
+    .header{
+        display: block;
+        .logo{
+            margin-top: 10px;
+        }
+        .menu{
+            background-color: $primary-color;
+            display: none;
+            &__item{
+                display: block;
+                padding-top: 25px;
+            }
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .toggle{
+            display: block;
+            color: $white-color;
+            font-size: 20px;
+            padding-top: 15px;
+            margin-right: 20px;
+        }
+        &.responsive{
+            .menu{
+                display: block;
+            }
+        }
+    }
+    .form{
+        margin: 0 20px;
+        &__item{
+            &--half{
+              flex: 1 1 100%;
+              }
+        }
+        .btn{
+            width: 100%;
+        }
+    }
+}

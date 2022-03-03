@@ -1,0 +1,29 @@
+// HEADER
+.header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: $primary-color;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .menu__item{
+        display: inline-block;
+    }
+    .menu__link{
+        color: $white-color;
+        font-family: $aleo-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 20px;
+    }
+    .toggle{
+        display: none;
+        cursor: pointer;
+    }
+}
